@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto|Ubuntu+Mono&display=swap');
+
+html, body { 
+	margin:0;
+	height: 100%;
+	background-color: #ddd8c4;
+}
+
+/********* MENU ***********/
+
+.menu{
+	font-family: 'Roboto';
+	list-style: none;
+	background: #5d576b;
+	color: #ddd8c4;
+	position: fixed;
+	padding: 5px;
+	left: 10px;
+	top:10px;
+	width: 15%;
+	height: 95%;
+	margin: 5px;
+	border-radius: 15px;
+}
+
+.main-menu{
+	position: fixed;
+	overflow:auto;
+	width: 15%;
+	max-height: 50%;
+
+}
+.menu ul li:hover{
+	background: #222222;
+	color: #ffffff;
+	width: 95%;
+}
+
+.main-menu li:hover{
+	background: #adacb5;
+	color: #222222;
+	width: 95%;
+}
+
+.menu li ul{
+	list-style: none;
+	display: none;
+
+}
+
+.menu li{
+	cursor: pointer;
+
+}
+
+#top_box{
+		align-items: center;
+}
+
+#top_box input, #top_box select{
+	background-color: #C6C6C6;
+	border: none;
+	width: 80%;
+	margin: 0% 10%;
+	border-radius: 3px;
+}
+
+#user{
+	margin: 0% 10%;
+	width: 80%;
+	text-align: center;
+}
+
+.main{
+	background: #5d576b; 
+	color: #ffffff;
+	padding: 10px;
+	width: 80%;
+	float: right;
+	margin: 15px 2%;
+	border-radius: 15px;
+}
+
+#user_img{
+	margin: 20px 10%;
+	width: 80%;
+	height: auto;
+}
+
+#user #permissao{
+	font-size: 12px;
+	margin: 2px 10px;
+	padding-top: -20%;
+
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: #00FF00;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.lab{
+	margin: 0% 10%;
+	width: 80%;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/************ MAIN SCREEN ***************/
+
+.cadastro label, .cadastro input, .cadastro button, .cadastro select{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	width: 95%;
+	height: 40px;
+	border:none;
+	margin: 2px 2%;	
+	border-radius: 5px;
+}
+
+.mono-space select{
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 18px;
+}
+
+.cadastro .viewBox{
+	height: auto;
+}
+
+.cadastro label{
+	padding-top: 20px;
+}
+
+.cadastro button{
+	margin: 2% 3%;
+	width: 150px;
+	float: right;
+	background: #adacb5;
+	color: #222222;
+}
+
+.cadastro button:hover{
+	background: #222222;
+	color: #ffffff;
+}
+
+.cadastro .title{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+}
+
+.cadastro table{  /* Tabela para espaçar os botões tipo menu */
+	float: right;
+	margin: 2% 3%;
+}
+
+
+.cadastro .screen-center{ /* Tabela para mostrar conteúdo centralizada */
+	margin: 30px auto auto auto;
+	float: none;
+}
+
+.cadastro table td{ /* Espaço entre os botões */
+	padding-left: 5px;
+
+}
+
+#tabItens tr:nth-child(odd){
+	background: #555;
+}
+
+#tabItens tr:hover {
+    background-color:#777;
+    cursor: pointer;
+}
+/* ********** POP-UP ************/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+*/
+.popup {
+  padding: 20px 50px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  width: auto;
+  position: fixed;
+  height: auto;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+  cursor: pointer;
+}
+.popup .content {
+  height: 85%;
+  overflow: auto;
+  color: #000000;
+}
+
+.content input{
+	background-color: #F0F0F0;
+}

@@ -1,0 +1,54 @@
+  <script type="text/javascript" src="js/cadEtq.js"></script>
+
+
+    <div class="cadastro" >
+      <label class="title">ETIQUETAS DE TINTAS</label>
+      <label> Descrição</label>
+      <select id="selDesc" ></select>
+      <label> Cliente </label>
+      <input id="edtCliente" type="text" />
+      <label> Tipo de Tinta </label>  
+      <select id="selTipo" name="tipo">
+        <option value="ES">Esmalte Sintético</option>
+        <option selected="selected" value="AC">PU Acrílico</option>
+        <option value="AL">PU Alquídico</option>
+        <option value="LN">Laca Nitro</option>
+        <option value="PL">Poliéster</option>
+      </select>
+
+      <label> Fabricação </label>
+      <input id="edtFab" type="date"/>
+      <label> Validade (3 anos)</label>
+      <input id="edtVal" type="date"/>    
+      <label> Volume </label>
+      <select id="selVol" name="vol">
+        <option value="450ml">450ml</option>
+        <option selected="selected" value="900ml">900ml (1/4)</option>
+        <option value="1.8L">1.8 litro</option>
+        <option value="2.7L">2.7 litros</option>
+        <option value="3.6L">3.6 litros (Galão)</option>
+        <option value="5L">5 litros</option>
+        <option value="18L">18 litros</option>
+      </select>
+      <label> Qtd. Etiquetas </label>
+      <input id="edtQtd" type="text" name="qtd" maxlength="2" value="1"/>
+      <table>
+        <tr>
+          <td><button id="btnAddCadEtq">Adicionar</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="cadastro viewEtq" id="scnVisCadEtq">
+      <label class="title">Visualização</label>      
+      <select class="viewBox" id="selEtq" size='10'></select>
+      <table>
+        <tr>
+          <td><button id="btnDelCadEtq">Limpar Box</button></td>
+          <td><button id="btnVisCadEtq">Visualizar</button></td>
+        </tr>
+      </table>
+
+    </div>
+
+

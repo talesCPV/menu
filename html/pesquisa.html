@@ -1,0 +1,47 @@
+  <script type="text/javascript" src="js/pesquisa.js"></script>
+
+
+    <div class="cadastro" >
+      <label class="title">PESQUISA DE PRODUTOS</label>
+
+      <table class="screen-center">
+        <tr>
+          <td><label> Busca:</label></td>
+          <td></label><select id="selPesq">
+            <optgroup label="Produtos">
+            <option selected="selected" value="prodDesc">Descrição</option>
+            <option value="prodCod">Código</option>
+            <option value="prodForn">Fornecedor</option>
+            <option value="prodServ">Serviços</option>
+            <option value="prodTinta">Tintas</option>
+            <option value="prodPig">Pigmentos</option>
+            <option value="prodEstbx">Estoque Baixo</option>
+            <optgroup label="Empresas">
+            <option value="empNome">Nome</option>
+            <option value="empCli">Clientes</option>
+            <option value="empFor">Fornecedores</option>
+            <optgroup label="Agenda">
+            <option value="agNome">Nome</option>
+            <option value="agEmp">Empresa</option>
+          </select></td>
+          <td><input id="edtBusca" type="text" /></td>
+          <td><button id="btnOkPesqProd">Pesquisar</button></td>
+        </tr>
+      </table>            
+    </div>
+
+
+    <div class="cadastro mono-space" id="scnPesqProd">   
+      <table class="viewBox screen-center" id="tabItens"></table>
+    </div>
+
+    <div class="overlay">
+      <div class="popup">
+        <h2 id="popTitle"></h2>
+        <div class="close" >&times</div>
+        <div class="content">
+          <div class="cadastro"><table><tr><td><button id="btnEdtProd">Editar</button></td><td><button class="'+cod+'" id="btnDelProd">Deletar</button></td></tr></table></div>
+        </div>
+      </div>
+    </div>
+

@@ -1,0 +1,33 @@
+  <script type="text/javascript" src="js/cadProd.js"></script>
+
+    <div class="cadastro" >
+      <label class="title">CADASTRO DE PRODUTOS</label>
+      <label> Descrição * </label>
+      <input id="edtDesc" type="text" name="Descricao" maxlength="80"/>
+      <label> Fornecedor </label>
+      <select id="selForn" > </select>
+      <label> Unidade </label>
+      <select id="selUnd"></select>
+      <label > Tipo </label>
+      <select id="selTipo" name="tipo" >
+        <option value="VENDA"> PRODUTO </option>"
+        <option value="SERVICO"> SERVICO </option>"
+        <option value="PIGMTO"> PIGMENTO </option>"
+      </select>
+      <label> Estoque </label>
+      <input id="edtEtq" type="text" name="estoque" maxlength="10" value="0"/>
+      <label> Estoque Minimo </label>
+      <input id="edtEtqMin" type="text" name="est_min" maxlength="14" value="0"/>
+      <label> Codigo</label>
+      <input id="edtCod" type="text" name="Codigo" maxlength="15"/>
+      <label> Codigo do Produto</label>
+      <input id="edtCodProd" type="text" name="cod_bar" maxlength="15"/>
+      <label> NCM </label>
+      <input id="edtNcm" type="text" name="ncm" maxlength="8"/>
+      <label> Preço de Compra R$ *</label>
+      <input id="edtCusto" type="text" name="Preco de Compra" maxlength="15" />
+      <label> Margem de Lucro % *</label>
+      <input id="edtMargem" type="text" name="Margem de Lucro" maxlength="15" />
+      <button id="btnSaveCadProd">Salvar</button>
+
+    </div>
